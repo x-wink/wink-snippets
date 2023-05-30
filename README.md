@@ -1,65 +1,72 @@
-# wink-snippets README
+<h1 align="center">欢迎使用我的VSCode代码片段 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/x-wink/wink-snippets#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
 
-This is the README for your extension "wink-snippets". After writing up a brief description, we recommend including the following sections.
+## ⬇️ 使用方式
 
-## Features
+### vue 文件内
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+| 触发词 | 描述           |
+| ------ | -------------- |
+| vbase  | 单文件组件模板 |
 
-For example if there is an image subfolder under your extension project workspace:
+### html 代码块内
 
-\!\[feature X\]\(images/feature-x.png\)
+| 触发词    | 描述           |
+| --------- | -------------- |
+| vif       | v-if 指令      |
+| velse     | v-else 指令    |
+| velseif   | v-else-if 指令 |
+| vshow     | v-show 指令    |
+| vfor      | v-for 指令     |
+| slot      | 定义 slot      |
+| component | 动态组件       |
+| component | 动态组件       |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### typescript 代码块内
 
-## Requirements
+| 触发词          | 描述                                      |
+| --------------- | ----------------------------------------- |
+| props           | 定义组件 Props                            |
+| props-defaults  | 定义组件 Props 与默认值                   |
+| attrs           | 引用组件 Attrs                            |
+| slots           | 引用组件 Slots                            |
+| emits           | 定义组件 Emits                            |
+| emits3.3        | 定义组件 Emits（vue3.3 版本新增语法糖）   |
+| expose          | 定义组件 Expose                           |
+| options         | 定义组件 Options（vue3.3 版本新增语法糖） |
+| ref             | 定义 Ref                                  |
+| reactive        | 定义 Reactive                             |
+| computed        | 定义 Computed                             |
+| computed-setter | 定义带有 Setter 的 Computed               |
+| func            | 定义函数                                  |
+| mounted         | 监听 Mounted                              |
+| unmounted       | 监听 Unmounted                            |
+| swap            | 交换变量值                                |
+| any             | 不推荐使用 any 类型                       |
+| table           | 打印日志                                  |
+| time            | 打印日志                                  |
+| group           | 打印日志                                  |
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## 👤 Author
 
-## Extension Settings
+**向文可**
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- Email: 13202090601@163.com
+- Github: [@x-wink](https://github.com/x-wink)
 
-For example:
+## 🤝 Contributing
 
-This extension contributes the following settings:
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/x-wink/libary-template/issues).
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Show your support
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Give a ⭐️ if this project helped you!
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

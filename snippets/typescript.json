@@ -1,24 +1,4 @@
 {
-  "replace any": {
-    "prefix": "any",
-    "body": ["Record<string, unknown>"],
-    "description": "不推荐使用any类型"
-  },
-  "console table": {
-    "prefix": "table",
-    "body": ["console.table(\"$1\");$0"],
-    "description": "打印日志"
-  },
-  "console time": {
-    "prefix": "time",
-    "body": ["console.time();", "$2", "console.timeEnd(\"${1:time}\");$0"],
-    "description": "打印日志"
-  },
-  "console group": {
-    "prefix": "group",
-    "body": ["console.group();", "$2", "console.groupEnd(\"${1:group}\");$0"],
-    "description": "打印日志"
-  },
   "define props": {
     "prefix": "props",
     "body": [
@@ -78,7 +58,7 @@
   "options": {
     "prefix": "options",
     "body": ["defineOptions({", "\tname:\"$1\"", "});$0"],
-    "description": "定义组件Options"
+    "description": "定义组件Options（vue3.3 版本新增语法糖）"
   },
   "define ref": {
     "prefix": "ref",
@@ -113,20 +93,36 @@
   "define mounted": {
     "prefix": "mounted",
     "body": ["onMounted(() => {\n\t$1\n});$0"],
-    "description": "定义Mounted"
+    "description": "监听Mounted"
   },
   "define unmounted": {
     "prefix": "unmounted",
     "body": ["onUnmounted(() => {\n\t$1\n});$0"],
-    "description": "定义Unmounted"
+    "description": "监听Unmounted"
   },
   "swap vars": {
     "prefix": "swap",
-    "body": [
-      "const temp = ${1:a};",
-      "$1 = ${2:b};",
-      "$2 = temp;$0"
-    ],
+    "body": ["const temp = ${1:a};", "$1 = ${2:b};", "$2 = temp;$0"],
     "description": "交换变量值"
+  },
+  "replace any": {
+    "prefix": "any",
+    "body": ["Record<string, unknown>"],
+    "description": "不推荐使用any类型"
+  },
+  "console table": {
+    "prefix": "table",
+    "body": ["console.table(\"$1\");$0"],
+    "description": "打印日志"
+  },
+  "console time": {
+    "prefix": "time",
+    "body": ["console.time();", "$2", "console.timeEnd(\"${1:time}\");$0"],
+    "description": "打印日志"
+  },
+  "console group": {
+    "prefix": "group",
+    "body": ["console.group();", "$2", "console.groupEnd(\"${1:group}\");$0"],
+    "description": "打印日志"
   }
 }

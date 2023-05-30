@@ -2,12 +2,14 @@
   "name": "wink-snippets",
   "displayName": "wink-snippets",
   "description": "vue3+ts常用代码片段",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "向文可",
     "email": "13202090601@163.com",
     "url": "https://xiangwenke.love"
   },
+  "publisher": "xwink",
+  "icon": "icon.ico",
   "repository": {
     "type": "github",
     "url": "https://github.com/x-wink/wink-snippets"
@@ -45,5 +47,15 @@
         "path": "./snippets/vue.json"
       }
     ]
+  },
+  "scripts": {
+    "build": "vsce package",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "release": "bumpp package.json --commit \"release: v%s\" --push --all --tag && pnpm run build && vsce publish"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.19.0",
+    "bumpp": "^9.1.0",
+    "conventional-changelog-cli": "^2.2.2"
   }
 }
