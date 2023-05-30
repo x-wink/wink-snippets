@@ -15,7 +15,7 @@
     "url": "https://github.com/x-wink/wink-snippets"
   },
   "engines": {
-    "vscode": "^1.78.0"
+    "vscode": "^1.0.0"
   },
   "categories": [
     "Snippets"
