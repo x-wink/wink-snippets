@@ -1,0 +1,132 @@
+{
+  "replace any": {
+    "prefix": "any",
+    "body": ["Record<string, unknown>"],
+    "description": "不推荐使用any类型"
+  },
+  "console table": {
+    "prefix": "table",
+    "body": ["console.table(\"$1\");$0"],
+    "description": "打印日志"
+  },
+  "console time": {
+    "prefix": "time",
+    "body": ["console.time();", "$2", "console.timeEnd(\"${1:time}\");$0"],
+    "description": "打印日志"
+  },
+  "console group": {
+    "prefix": "group",
+    "body": ["console.group();", "$2", "console.groupEnd(\"${1:group}\");$0"],
+    "description": "打印日志"
+  },
+  "define props": {
+    "prefix": "props",
+    "body": [
+      "const props = defineProps<{",
+      "\t${1:modelValue}: ${2:string}",
+      "}>();$0"
+    ],
+    "description": "定义组件Props"
+  },
+  "define props with default value": {
+    "prefix": "props-defaults",
+    "body": [
+      "const props = withDefaults(",
+      "\tdefineProps<{",
+      "\t\t${1:modelValue}?: ${2:string}",
+      "\t}>(),",
+      "\t{",
+      "\t\t$1: ${3:\"\"}",
+      "\t}",
+      ");$0"
+    ],
+    "description": "定义组件Props与默认值"
+  },
+  "attrs": {
+    "prefix": "attrs",
+    "body": ["const attrs = useAttrs();"],
+    "description": "引用组件Attrs"
+  },
+  "slots": {
+    "prefix": "slots",
+    "body": ["const slots = useSlots();"],
+    "description": "引用组件Slots"
+  },
+  "emits": {
+    "prefix": "emits",
+    "body": [
+      "const emits = defineEmits<{",
+      "\t(e: \"${1:update:modelValue}\"${2:, value: $3}): void;",
+      "}>();$0"
+    ],
+    "description": "定义组件Emits"
+  },
+  "emits in vue3.3": {
+    "prefix": "emits3.3",
+    "body": [
+      "const emits = defineEmits<{",
+      "\t\"${1:update:modelValue}\": [${2:value: $3}]",
+      "}>();$0"
+    ],
+    "description": "定义组件Emits（vue3.3版本新增语法糖）"
+  },
+  "expose": {
+    "prefix": "expose",
+    "body": ["defineExpose({", "\t$1", "});$0"],
+    "description": "定义组件Expose"
+  },
+  "options": {
+    "prefix": "options",
+    "body": ["defineOptions({", "\tname:\"$1\"", "});$0"],
+    "description": "定义组件Options"
+  },
+  "define ref": {
+    "prefix": "ref",
+    "body": ["const $1 = ref${2:<$3>}($4${5: as $6});$0"],
+    "description": "定义Ref"
+  },
+  "define reactive": {
+    "prefix": "reactive",
+    "body": ["const $1 = reactive${2:<$3>}($4${5: as $6});$0"],
+    "description": "定义Reactive"
+  },
+  "define computed": {
+    "prefix": "computed",
+    "body": ["const $1 = computed(() => ${2:{\n\treturn $4;\n\\}});$0"],
+    "description": "定义Computed"
+  },
+  "define computed with setter": {
+    "prefix": "computed-setter",
+    "body": [
+      "const $1 = computed({",
+      "\tget: () => ${2:{\n\treturn $4;\n\\}},",
+      "\tset: (value) => ($2 = value)",
+      "});$0"
+    ],
+    "description": "定义带有Setter的Computed"
+  },
+  "define function": {
+    "prefix": "func",
+    "body": ["const ${1:func} = $5($2)${4:: void} => {\n\t$3\n}$0"],
+    "description": "定义函数"
+  },
+  "define mounted": {
+    "prefix": "mounted",
+    "body": ["onMounted(() => {\n\t$1\n});$0"],
+    "description": "定义Mounted"
+  },
+  "define unmounted": {
+    "prefix": "unmounted",
+    "body": ["onUnmounted(() => {\n\t$1\n});$0"],
+    "description": "定义Unmounted"
+  },
+  "swap vars": {
+    "prefix": "swap",
+    "body": [
+      "const temp = ${1:a};",
+      "$1 = ${2:b};",
+      "$2 = temp;$0"
+    ],
+    "description": "交换变量值"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "SFC template": {
+        "scope": "vue",
+        "prefix": "vbase",
+        "body": [
+            "<template>",
+            "\t<div class=\"${1:container}\">",
+            "\t\t${1}",
+            "\t</div>",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t${2:console.info(\"$1\")}",
+            "</script>",
+            "",
+            "<style scoped lang=\"less\">",
+            "\t.$1{",
+            "\t\t//",
+            "\t}",
+            "</style>"
+        ],
+        "description": "vue单文件组件模板"
+    }
+}

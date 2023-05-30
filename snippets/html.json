@@ -1,0 +1,51 @@
+{
+    "v-if": {
+        "prefix": "vif",
+        "body": [
+            "v-if=\"$1\"$0"
+        ],
+        "description": "使用指令v-if"
+    },
+    "v-else": {
+        "prefix": "velse",
+        "body": [
+            "v-else"
+        ],
+        "description": "使用指令v-else"
+    },
+    "v-else-if": {
+        "prefix": "velseif",
+        "body": [
+            "v-else-if=\"$1\"$0"
+        ],
+        "description": "使用指令v-else-if"
+    },
+    "v-show": {
+        "prefix": "vshow",
+        "body": [
+            "v-show=\"$1\"$0"
+        ],
+        "description": "使用指令v-show"
+    },
+    "v-for": {
+        "prefix": "vfor",
+        "body": [
+            "v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\"$0"
+        ],
+        "description": "使用指令v-for"
+    },
+    "define slot":{
+        "prefix": "slot",
+        "body": [
+            "<slot${1: name=\"default\"}>${2}</slot>$0"
+        ],
+        "description": "定义Slot"
+    },
+    "component is": {
+        "prefix": "component",
+        "body": [
+            "<component :is=\"${1}\" />$0"
+        ],
+        "description": "动态组件"
+    }
+}
