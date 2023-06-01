@@ -61,8 +61,8 @@
 
 **向文可**
 
-- Email: 13202090601@163.com
-- Github: [@x-wink](https://github.com/x-wink)
+-   Email: 13202090601@163.com
+-   Github: [@x-wink](https://github.com/x-wink)
 
 ## 🤝 Contributing
 
