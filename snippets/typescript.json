@@ -105,15 +105,40 @@
     "body": ["const temp = ${1:a};", "$1 = ${2:b};", "$2 = temp;$0"],
     "description": "交换变量值"
   },
-  "try catch":{
+  "try catch": {
     "prefix": "trycatch",
-    "body":[
+    "body": [
       "try {",
       "\t${2://}",
       "} catch (e) {",
       "\t${1:console.error(e);}",
       "}$0"
-    ]
+    ],
+    "description": "异常处理"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (let ${1:i} = 0, len = ${2:arr}.length; $1 < len; $1++) {",
+      "\t${3:const item = $2[$1];}",
+      "}$0"
+    ],
+    "description": "遍历"
+  },
+  "for in": {
+    "prefix": "forin",
+    "body": ["for (const ${1:index} in ${2:arr}) {", "\t$3", "}$0"],
+    "description": "遍历"
+  },
+  "for of": {
+    "prefix": "forof",
+    "body": ["for (const ${1:item} of ${2:arr}) {", "\t$3", "}$0"],
+    "description": "遍历"
+  },
+  "foreach": {
+    "prefix": "foreach",
+    "body": ["${1:arr}.forEach((item${2:, index}) => {", "\t$3", "});$0"],
+    "description": "遍历"
   },
   "replace any": {
     "prefix": "any",
