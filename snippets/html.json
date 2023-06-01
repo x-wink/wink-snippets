@@ -47,5 +47,14 @@
             "<component :is=\"${1}\" />$0"
         ],
         "description": "动态组件"
+    },
+    "template": {
+        "prefix": "template",
+        "body": [
+            "<template>",
+            "$1",
+            "</template>$0"
+        ],
+        "description": "模板块"
     }
 }

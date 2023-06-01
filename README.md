@@ -25,7 +25,7 @@
 | vfor      | v-for 指令     |
 | slot      | 定义 slot      |
 | component | 动态组件       |
-| component | 动态组件       |
+| template  | 模板块         |
 
 ### typescript 代码块内
 
@@ -61,7 +61,7 @@
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/x-wink/libary-template/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/x-wink/wink-snippets/issues).
 
 ## Show your support
 
