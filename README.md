@@ -47,6 +47,7 @@
 | mounted         | 监听 Mounted                              |
 | unmounted       | 监听 Unmounted                            |
 | swap            | 交换变量值                                |
+| trycatch        | 异常处理                                  |
 | any             | 不推荐使用 any 类型                       |
 | table           | 打印日志                                  |
 | time            | 打印日志                                  |

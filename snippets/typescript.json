@@ -105,6 +105,16 @@
     "body": ["const temp = ${1:a};", "$1 = ${2:b};", "$2 = temp;$0"],
     "description": "交换变量值"
   },
+  "try catch":{
+    "prefix": "trycatch",
+    "body":[
+      "try {",
+      "\t${2://}",
+      "} catch (e) {",
+      "\t${1:console.error(e);}",
+      "}$0"
+    ]
+  },
   "replace any": {
     "prefix": "any",
     "body": ["Record<string, unknown>"],
