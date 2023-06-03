@@ -1,12 +1,9 @@
 ## [1.0.3](https://github.com/x-wink/wink-snippets/compare/v1.0.2...v1.0.3) (2023-06-03)
 
-
 ### Features
 
-* 自动生成README脚本 ([d6584d6](https://github.com/x-wink/wink-snippets/commit/d6584d641222a0428e1a470b1ae2ab2ed3d6769c))
-* ref和reactive不带类型注解的代码块，import导入模块 ([8f46dda](https://github.com/x-wink/wink-snippets/commit/8f46dda9a58b998c3256db30a189b55ae1b1e71c))
-
-
+-   自动生成 README 脚本 ([d6584d6](https://github.com/x-wink/wink-snippets/commit/d6584d641222a0428e1a470b1ae2ab2ed3d6769c))
+-   ref 和 reactive 不带类型注解的代码块，import 导入模块 ([8f46dda](https://github.com/x-wink/wink-snippets/commit/8f46dda9a58b998c3256db30a189b55ae1b1e71c))
 
 ## [1.0.2](https://github.com/x-wink/wink-snippets/compare/v1.0.1...v1.0.2) (2023-06-01)
 

@@ -50,9 +50,9 @@
     },
     "scripts": {
         "doc": "ts-node ./scripts/doc.ts && pnpm prettier",
-        "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+        "version": "conventional-changelog -p angular -i CHANGELOG.md -s && pnpm doc && git add CHANGELOG.md,README.md",
         "build": "vsce package",
-        "release": "pnpm doc && bumpp package.json --commit \"release: v%s\" --push --all --tag && pnpm run build && vsce publish",
+        "release": "bumpp package.json --commit \"release: v%s\" --push --all --tag && pnpm run build && vsce publish",
         "prettier": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,json,md,html}"
     },
     "devDependencies": {

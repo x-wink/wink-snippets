@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { version } from '../package.json';
 const root = path.resolve(process.cwd(), 'snippets');
 const files = fs
     .readdirSync(root)
@@ -32,7 +33,9 @@ const md = files
 let template = String(
     fs.readFileSync(path.resolve(__dirname, 'doc.md'))
 );
-template = template.replace('@@configs', md);
+template = template
+    .replace('@@version', version)
+    .replace('@@configs', md);
 fs.writeFileSync(
     path.resolve(process.cwd(), 'README.md'),
     template
