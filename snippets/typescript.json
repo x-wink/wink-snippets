@@ -66,17 +66,27 @@
     },
     "define ref": {
         "prefix": "ref",
+        "body": ["const $1 = ref($2);$0"],
+        "description": "定义Ref"
+    },
+    "define ref with type": {
+        "prefix": "reftype",
         "body": [
             "const $1 = ref${2:<$3>}($4${5: as $6});$0"
         ],
-        "description": "定义Ref"
+        "description": "定义带类型的Ref"
     },
     "define reactive": {
         "prefix": "reactive",
+        "body": ["const $1 = reactive($2);$0"],
+        "description": "定义Reactive"
+    },
+    "define reactive with type": {
+        "prefix": "reactivetype",
         "body": [
             "const $1 = reactive${2:<$3>}($4${5: as $6});$0"
         ],
-        "description": "定义Reactive"
+        "description": "定义带类型的Reactive"
     },
     "define computed": {
         "prefix": "computed",
@@ -131,6 +141,11 @@
             "}$0"
         ],
         "description": "异常处理"
+    },
+    "import es module": {
+        "prefix": "import",
+        "body": ["import { $2 } from \"$1\";$0"],
+        "description": "导入模块"
     },
     "for": {
         "prefix": "for",
