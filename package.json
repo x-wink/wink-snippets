@@ -49,15 +49,20 @@
         ]
     },
     "scripts": {
-        "build": "vsce package",
+        "doc": "ts-node ./scripts/doc.ts && pnpm prettier",
         "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-        "release": "bumpp package.json --commit \"release: v%s\" --push --all --tag && pnpm run build && vsce publish",
+        "build": "vsce package",
+        "release": "pnpm doc && bumpp package.json --commit \"release: v%s\" --push --all --tag && pnpm run build && vsce publish",
         "prettier": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,json,md,html}"
     },
     "devDependencies": {
+        "@types/node": "^20.2.5",
         "@vscode/vsce": "^2.19.0",
+        "@xwink/eslint-config": "^1.0.0",
         "bumpp": "^9.1.0",
         "conventional-changelog-cli": "^2.2.2",
-        "prettier": "^2.8.8"
+        "prettier": "^2.8.8",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.1.3"
     }
 }
