@@ -40,7 +40,7 @@
     },
     "template": {
         "prefix": "template",
-        "body": ["<template>", "$1", "</template>$0"],
+        "body": ["<template ${1}>", "$2", "</template>$0"],
         "description": "模板块"
     }
 }
