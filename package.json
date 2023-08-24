@@ -2,7 +2,7 @@
     "name": "wink-snippets",
     "displayName": "wink-snippets",
     "description": "vue3+ts常用代码片段",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": {
         "name": "向文可",
         "email": "13202090601@163.com",
@@ -50,7 +50,7 @@
     },
     "scripts": {
         "doc": "ts-node ./scripts/doc.ts && pnpm prettier",
-        "version": "conventional-changelog -p angular -i CHANGELOG.md -s && pnpm doc && git add CHANGELOG.md,README.md",
+        "version": "conventional-changelog -p angular -i CHANGELOG.md -s && pnpm doc && git add CHANGELOG.md README.md",
         "build": "vsce package",
         "release": "bumpp package.json --commit \"release: v%s\" --push --all --tag && pnpm run build && vsce publish",
         "prettier": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,json,md,html}"
