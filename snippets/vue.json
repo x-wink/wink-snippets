@@ -4,13 +4,73 @@
         "prefix": "vbase",
         "body": [
             "<template>",
+            "\t<div>",
+            "\t\t${1}",
+            "\t</div>",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t${0}",
+            "</script>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "vue单文件组件模板"
+    },
+    "SFC template with less": {
+        "scope": "vue",
+        "prefix": "vbase-less",
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t\t${1}",
+            "\t</div>",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t${0}",
+            "</script>",
+            "",
+            "<style scoped lang=\"less\">",
+            "",
+            "</style>"
+        ],
+        "description": "vue单文件组件模板，使用less"
+    },
+    "SFC template with sass": {
+        "scope": "vue",
+        "prefix": "vbase-sass",
+        "body": [
+            "<template>",
+            "\t<div>",
+            "\t\t${1}",
+            "\t</div>",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t${0}",
+            "</script>",
+            "",
+            "<style scoped lang=\"scss\">",
+            "",
+            "</style>"
+        ],
+        "description": "vue单文件组件模板，使用sass"
+    },
+    "SFC template container": {
+        "scope": "vue",
+        "prefix": "vbase-container",
+        "body": [
+            "<template>",
             "\t<div class=\"${1:container}\">",
             "\t\t${1}",
             "\t</div>",
             "</template>",
             "",
             "<script setup lang=\"ts\">",
-            "\t${2:console.info(\"$1\")}",
+            "\t${0}",
             "</script>",
             "",
             "<style scoped lang=\"less\">",
@@ -19,6 +79,6 @@
             "\t}",
             "</style>"
         ],
-        "description": "vue单文件组件模板"
+        "description": "vue单文件组件模板容器"
     }
 }
