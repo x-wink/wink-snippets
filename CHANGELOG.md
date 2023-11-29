@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/x-wink/wink-snippets/compare/v1.0.4...v1.0.5) (2023-11-29)
+
+### Performance Improvements
+
+-   vbase ([cb7b78e](https://github.com/x-wink/wink-snippets/commit/cb7b78e80d9ff7fb8dacd511a4ef5b6f31e029f6))
+
 ## [1.0.4](https://github.com/x-wink/wink-snippets/compare/v1.0.3...v1.0.4) (2023-08-24)
 
 ### Features
