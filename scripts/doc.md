@@ -1,30 +1,33 @@
-<h1 align="center">欢迎使用我的VSCode代码片段 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-@@version-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/x-wink/wink-snippets#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-</p>
+# 😉 欢迎使用我的 VSCode 代码片段
 
-## ⬇️ 使用方式
+![版本](https://img.shields.io/badge/version-@@version-blue.svg?cacheSeconds=2592000)
+[![文档](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/x-wink/wink-snippets#readme)
+
+## 💎 使用方式
 
 @@configs
 
-## 👤 Author
+## 📖 快速入门
+
+## 📦 进阶使用
+
+## 📄 待办列表
+
+## 🆘 问题求助
+
+## 🎯 框架依赖
+
+## 👤 作者
 
 **向文可**
 
--   Email: 13202090601@163.com
+-   Email: 1041367524@qq.com
 -   Github: [@x-wink](https://github.com/x-wink)
 
-## 🤝 Contributing
+## 🤝 贡献
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/x-wink/wink-snippets/issues).
+欢迎大家随时[点击这里](https://github.com/x-wink/wink-snippets/issues)为我提供贡献、问题和功能建议
 
-## Show your support
+## 😘 感谢支持
 
-Give a ⭐️ if this project helped you!
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+如果觉得项目对你有帮助，就帮我点个小星星吧~ ⭐️

@@ -1,12 +1,12 @@
 {
     "name": "wink-snippets",
-    "displayName": "wink-snippets",
+    "displayName": "Wink Snippets",
     "description": "vue3+ts常用代码片段",
     "version": "1.0.4",
     "author": {
         "name": "向文可",
-        "email": "13202090601@163.com",
-        "url": "https://xiangwenke.love"
+        "email": "1041367524@qq.com",
+        "url": "https://xwink.fun"
     },
     "publisher": "xwink",
     "icon": "icon.ico",
@@ -58,10 +58,10 @@
     "devDependencies": {
         "@types/node": "^20.2.5",
         "@vscode/vsce": "^2.19.0",
-        "@xwink/eslint-config": "^1.0.0",
+        "@xwink/eslint-config": "^1.1.1",
         "bumpp": "^9.1.0",
         "conventional-changelog-cli": "^2.2.2",
-        "prettier": "^2.8.8",
+        "prettier": "^3.1.0",
         "ts-node": "^10.9.1",
         "typescript": "^5.1.3"
     }

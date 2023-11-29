@@ -8,16 +8,6 @@
 
 -   template block ([3dffc0c](https://github.com/x-wink/wink-snippets/commit/3dffc0c0cea260847adf7f35a0e1788031984929))
 
-## [1.0.4](https://github.com/x-wink/wink-snippets/compare/v1.0.3...v1.0.4) (2023-08-24)
-
-### Features
-
--   自动更新 README 中的版本号 ([f34ece6](https://github.com/x-wink/wink-snippets/commit/f34ece6da543e76fb93a5d805f32981a71f3d185))
-
-### Performance Improvements
-
--   template block ([3dffc0c](https://github.com/x-wink/wink-snippets/commit/3dffc0c0cea260847adf7f35a0e1788031984929))
-
 ## [1.0.3](https://github.com/x-wink/wink-snippets/compare/v1.0.2...v1.0.3) (2023-06-03)
 
 ### Features
