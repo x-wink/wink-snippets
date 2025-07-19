@@ -21,8 +21,8 @@
 
 **向文可**
 
--   Email: 1041367524@qq.com
--   Github: [@x-wink](https://github.com/x-wink)
+- Email: 1041367524@qq.com
+- Github: [@x-wink](https://github.com/x-wink)
 
 ## 🤝 贡献
 

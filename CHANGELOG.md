@@ -1,3 +1,7 @@
+## [1.0.6](https://github.com/x-wink/wink-snippets/compare/v1.0.5...v1.0.6) (2025-07-19)
+
+
+
 ## [1.0.5](https://github.com/x-wink/wink-snippets/compare/v1.0.4...v1.0.5) (2023-11-29)
 
 ### Performance Improvements
