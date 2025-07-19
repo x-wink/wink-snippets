@@ -32,23 +32,23 @@
         "body": ["const slots = useSlots();"],
         "description": "引用组件Slots"
     },
-    "emits": {
-        "prefix": "emits",
+    "emits in vue less than 3.3": {
+        "prefix": "emits3.2",
         "body": [
-            "const emits = defineEmits<{",
+            "const emit = defineEmits<{",
             "\t(e: \"${1:update:modelValue}\"${2:, value: $3}): void;",
             "}>();$0"
         ],
-        "description": "定义组件Emits"
+        "description": "定义组件Emits(低于vue3.3版本旧语法)"
     },
-    "emits in vue3.3": {
-        "prefix": "emits3.3",
+    "emits": {
+        "prefix": "emits",
         "body": [
-            "const emits = defineEmits<{",
+            "const emit = defineEmits<{",
             "\t\"${1:update:modelValue}\": [${2:value: $3}]",
             "}>();$0"
         ],
-        "description": "定义组件Emits（vue3.3版本新增语法糖）"
+        "description": "定义组件Emits"
     },
     "expose": {
         "prefix": "expose",
@@ -62,7 +62,7 @@
             "\tname:\"$1\"",
             "});$0"
         ],
-        "description": "定义组件Options（vue3.3 版本新增语法糖）"
+        "description": "定义组件Options"
     },
     "define ref": {
         "prefix": "ref",
@@ -95,20 +95,27 @@
         ],
         "description": "定义Computed"
     },
-    "define computed with setter": {
-        "prefix": "computed-setter",
+    "define writable computed": {
+        "prefix": "computed-writable",
         "body": [
             "const $1 = computed({",
             "\tget: () => ${2:{\n\treturn $4;\n\\}},",
-            "\tset: (value) => ($2 = value)",
+            "\tset: (val) => ($2 = val)",
             "});$0"
         ],
-        "description": "定义带有Setter的Computed"
+        "description": "定义带有Getter/Setter的Computed"
+    },
+    "define constant function": {
+        "prefix": "func-const",
+        "body": [
+            "const ${1:func} = $5($2)${4:: void} => {\n\t$3\n}$0"
+        ],
+        "description": "定义常量函数(不会提升作用域)"
     },
     "define function": {
         "prefix": "func",
         "body": [
-            "const ${1:func} = $5($2)${4:: void} => {\n\t$3\n}$0"
+            "function ${1:func}$5($2)${4:: void} {\n\t$3\n}$0"
         ],
         "description": "定义函数"
     },
