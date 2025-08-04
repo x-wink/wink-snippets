@@ -32,17 +32,17 @@
         "body": ["const slots = useSlots();"],
         "description": "引用组件Slots"
     },
-    "emits in vue less than 3.3": {
-        "prefix": "emits3.2",
+    "emit in vue less than Vue@3.3": {
+        "prefix": "emit3.2",
         "body": [
             "const emit = defineEmits<{",
             "\t(e: \"${1:update:modelValue}\"${2:, value: $3}): void;",
             "}>();$0"
         ],
-        "description": "定义组件Emits(低于vue3.3版本旧语法)"
+        "description": "定义组件Emits(低于vue@3.3版本旧语法)"
     },
-    "emits": {
-        "prefix": "emits",
+    "emit": {
+        "prefix": "emit",
         "body": [
             "const emit = defineEmits<{",
             "\t\"${1:update:modelValue}\": [${2:value: $3}]",
@@ -194,6 +194,11 @@
         "prefix": "any",
         "body": ["Record<string, unknown>"],
         "description": "不推荐使用any类型"
+    },
+    "replace void 0": {
+        "prefix": "void0",
+        "body": ["undefined"],
+        "description": "不推荐使用void 0"
     },
     "console table": {
         "prefix": "table",
