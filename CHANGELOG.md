@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/x-wink/wink-snippets/compare/v1.0.6...v1.0.7) (2025-08-04)
+
+
+### Features
+
+* replace void 0 ([f41233f](https://github.com/x-wink/wink-snippets/commit/f41233f1bb1f9f3d73e32c4f1b708df79fca80f8))
+
+
+
 ## [1.0.6](https://github.com/x-wink/wink-snippets/compare/v1.0.5...v1.0.6) (2025-07-19)
 
 

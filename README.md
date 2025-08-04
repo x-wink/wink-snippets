@@ -1,6 +1,6 @@
 # 😉 欢迎使用我的 VSCode 代码片段
 
-![版本](https://img.shields.io/badge/version-1.0.6-blue.svg?cacheSeconds=2592000)
+![版本](https://img.shields.io/badge/version-1.0.7-blue.svg?cacheSeconds=2592000)
 [![文档](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/x-wink/wink-snippets#readme)
 
 ## 💎 使用方式
@@ -27,8 +27,8 @@
 | props-defaults  | 定义组件Props与默认值 |
 | attrs  | 引用组件Attrs |
 | slots  | 引用组件Slots |
-| emits3.2  | 定义组件Emits(低于vue3.3版本旧语法) |
-| emits  | 定义组件Emits |
+| emit3.2  | 定义组件Emits(低于vue@3.3版本旧语法) |
+| emit  | 定义组件Emits |
 | expose  | 定义组件Expose |
 | options  | 定义组件Options |
 | ref  | 定义Ref |
@@ -49,6 +49,7 @@
 | forof  | 遍历 |
 | foreach  | 遍历 |
 | any  | 不推荐使用any类型 |
+| void0  | 不推荐使用void 0 |
 | table  | 打印日志 |
 | time  | 打印日志 |
 | group  | 打印日志 |
@@ -78,8 +79,8 @@
 
 **向文可**
 
--   Email: 1041367524@qq.com
--   Github: [@x-wink](https://github.com/x-wink)
+- Email: 1041367524@qq.com
+- Github: [@x-wink](https://github.com/x-wink)
 
 ## 🤝 贡献
 
